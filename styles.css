@@ -1,17 +1,11 @@
-div{
-    height: 100px;
-    background-color: aqua;
-    width: 100px;
+h1{
+    text-shadow: 3px 3px 3px red,5px 5px 5px yellow,4px 4px 4px green;
+}
+
+.box{
     border: 1px solid black;
-    margin: 5px;
-}
-
-.static{
-    transform: perspective(20px) translateZ(-20px);
-}
-
-.translated{
-    margin-left: 200px;
-    transform:rotateZ(45deg) ;
-    /* transform: perspective(200px) scaleZ(2) rotateX(45deg); */
+    height: 100px;
+    width: 200px;
+    box-shadow: -3px -3px 3px red,5px 5px 5px brown;
+    color: aqua;
 }
