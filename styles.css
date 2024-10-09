@@ -1,88 +1,43 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-#wrapper{
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 10px;
-    
-}
 .container{
-    position: relative;
+    height: 500px;
+    border: 2px solid green;
     display: flex;
+    /* flex-direction: column-reverse;
+    flex-direction: row;
+    flex-direction: column;
+    flex-direction: row-reverse; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: baseline;
+    justify-content: center;
+    justify-content: left;
+    justify-content: right;
+    justify-content: stretch;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    justify-content: space-between;
     justify-content: center;
     align-items: center;
-    transform-style: preserve-3d;
-    height: 100%;
-    z-index: -1;
-}
-.background,.foreground{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    object-fit: cover;
-}
-.background{
-    transform: translateZ(-40px) scale(5);
-}
-.foreground{
-    transform: translateZ(-20px) scale(3);
-}
-h1{
-    color: white;
-    position: absolute;
-    font-size: 10rem;
-    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin: 10px;
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: flex-start;
+    /* gap: 50px; */
 }
 
-section{
-    background-color: rgb(45,45,45);
-    color: white;
-    padding: 5rem 0;
+.div{
+    border: 1px solid brown;
+    background-color: aqua;
+    width: 100px;
+    flex-grow: 1;
+    /* flex-direction: row; */
 }
 
-.bg1{
-    background-image: url(cycle.jpg);
+#box1{
+    order: 1;
 }
-.bg2{
-    background-image: url(para.jpg);
-}
-.bg3{
-    background-image: url(sea.jpg);
-}
-
-.secheading{
-    font-size: 5rem;
-    padding: 0 10rem;
-}
-
-.text{
-    font-size: 1.5rem;
-    padding: 0 10rem;
-    margin: 5rem 0;
-}
-
-.bg{
-    position: relative;
-    width: 100%;
-    background-attachment: fixed;
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-}
-
-.desc{
-    position: absolute;
-    background-color: white;
-    padding: 0.5rem 2.5rem;
-    top: 50%;
-    left: 50%;
-    color: black;
-    font-size: 3.5rem;
-    font-weight: 600px;
-    transform: translate(-50%) translate(-50%);
+#box2{
+    order: 2;
 }
